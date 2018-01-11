@@ -6,7 +6,9 @@ func main() {
 	//cards = append(cards, "ace of diamond")
 	//cards.print()
 	cards := newDeck()
-	cards.print()
+	hand, remainingCards := deal(cards, 3)
+	hand.print()
+	remainingCards.print()
 }
 
 //func showCard() string{
