@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+
 
 func main() {
 	//cards := deck{"ace of spade", showCard()}
@@ -11,8 +11,11 @@ func main() {
 	//hand.print()
 	//remainingCards.print()
 	//cards.saveToFile("my_deck")
-	cards := newDeckFromFile("my_deck")
-	fmt.Println(cards)
+	//cards := newDeckFromFile("my_deck")
+	//fmt.Println(cards)
+	cards := newDeck()
+	cards.shuffle()
+	cards.print()
 }
 
 //func showCard() string{
